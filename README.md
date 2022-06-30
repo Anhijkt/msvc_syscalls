@@ -20,7 +20,7 @@ void* allocation = nullptr;
 size_t size = 200;
 NTSTATUS status = STATUS_PENDING;
 
-status = SYSCAL(NtAllocateVirtualMemory)(
+status = SYSCALL(NtAllocateVirtualMemory)(
 		(HANDLE)-1,
 		&allocation,
 		0,
